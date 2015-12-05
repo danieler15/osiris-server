@@ -6,53 +6,92 @@ block content
     div.hero
       
       div.nav.nav-custom
-        a.brand(href="/#")
-          | Internect
+        a.brand(href='http://www.dash.by')
+          img.logo-img(src='/images/white_brand_text.png', alt='Dash', style="")
         ul.nav-list
           li.nav-list-item
-            a.nav-link(href="/#info")
+            a.nav-link.nav-link-about(href="#")
               | About
           li.nav-list-item
-            a.nav-link(href="/#faq")
-              | FAQ
+            a.nav-link.nav-link-about(href="#")
+              | For Students
           li.nav-list-item
-            a.nav-link(href="/#join")
+            a.nav-link.nav-link-partners(href="#")
+              | For Companies
+          li.nav-list-item
+            a.nav-link(href="#")
               | Join
               
       div.feature
-        h1.lead High School Internships Made Easy
-        p.subtext Because Internships Aren't Just For College Kids
-        div#form-container
-          form.form-inline.join-form(action='/register' method='post')
-            div.form-group
-              label.sr-only(for="email-input") Your Email
-              div.input-group
-                input.form-control.email-input(type="text" id="email-input" placeholder="Your Email" name="email")
-                div.input-group-addon
-                  | @trinityschoolnyc.org
-            button.btn.btn-success.join-submit(type="submit") Join Us!
+          img.feature-logo-img(src='/images/logo.png', alt='InternFerry')
         
     div#info
-      p.how-it-works
-        | How It Works:
+      p.info-header
+        | 
+      p.info-detail
+        | Internect is a social internship network composed of current and former New York City prep school students who have interned at New York’s hottest startups and companies. 
+
+  
+
       div.row
-        div.col-lg-4
-          h2
-            | Easy
-          p
-            | lorem ipuasd jaskdlfj adklsjf asdf kasdf ;asd kl
-        div.col-lg-4
-          h2
-            | Easy
-          p
-            | lorem ipuasd jaskdlfj adklsjf asdf kasdf ;asd kl
-        div.col-lg-4
-          h2
-            | Easy
-          p
-            | lorem ipuasd jaskdlfj adklsjf asdf kasdf ;asd kl
+        div.col-md-6(style="text-align: center;")
+          p(style="width:100%; text-align: center; font-size:2.0em; ;margin-top:20px")
+            | For Students
+
+          p(style="margin: 0 auto;width:70%;font-size:1.0em;")
+            | InternFerry is all about helping you find your next summer internship. Internect’s function as a middleman is rooted in mutual trust with companies. We fix the existing informational asymmetry in the high school internship labor market. 
+
+          a.btn.btn-default(href="#", role="button", style="text-align:center; width: 30%; margin-top: 20px; font-size: 1.5em;")
+            | Learn More
+
+        div.col-md-6(style="text-align: center;")
+          p(style="width:100%; text-align: center; font-size:2.0em; ;margin-top:20px")
+            | For Companies
+
+
+
+          p(style="margin: 0 auto;width:70%;font-size:1.0em;")
+            | InternFerry is all about helping you find your next great interns. Internect’s function as a middleman is rooted in mutual trust with companies. We fix the existing informational asymmetry in the high school internship labor market. 
+
+          a.btn.btn-default(href="#", role="button", style="text-align:center; width: 30%; margin-top: 20px; font-size: 1.5em;")
+            | Learn More
+
+    div.partners
+      p.partners-header
+        | Our Partners
+
+      div.row.partners-row
+        div.col-xs-8.col-md-4
+          a.thumbnail(href='http://www.dash.by')
+            img(src='/images/testbw.png', alt='Dash')
+        div.col-xs-8.col-md-4
+          a.thumbnail(href='http://www.dash.by')
+            img(src='/images/testbw.png', alt='Dash')
+        div.col-xs-8.col-md-4
+          a.thumbnail(href='http://www.dash.by')
+            img(src='/images/testbw.png', alt='Dash')
+
+      div.row.partners-row
+        div.col-xs-6.col-md-3
+          a.thumbnail(href='http://www.dash.by')
+            img(src='/images/testbw.png', alt='Dash')
+        div.col-xs-6.col-md-3
+          a.thumbnail(href='http://www.dash.by')
+            img(src='/images/testbw.png', alt='Dash')
+        div.col-xs-6.col-md-3
+          a.thumbnail(href='http://www.dash.by')
+            img(src='/images/testbw.png', alt='Dash')
+        div.col-xs-6.col-md-3
+          a.thumbnail(href='http://www.dash.by')
+            img(src='/images/testbw.png', alt='Dash')
+
+
+
+
+    
 
     div.footer
       p.footer-label
-        | Copyright Internect. 2015.
+        | Copyright Internect. 2015. Contact us at email@email.com
+
 

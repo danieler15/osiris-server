@@ -1,5 +1,7 @@
+BRAND_COLOR = rgba(50, 160, 108, 1.0)
+
 body
-  font-family: Raleway, "Droid Serif", "Open Sans", Avenir, Montserrat
+  font-family: Avenir, Montserrat
   margin-left: 0
   margin-right: 0
 a
@@ -13,38 +15,63 @@ a
   padding-right: 0px
   
 .hero
-  background-image: url("/images/test1.jpg")
+  background-image: url("https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/69.jpg")
+  background-size: 100%
   width: 100%
   
 .nav-custom
-  max-width: 800px
+  //max-width: 800px
+  width: 100%
   margin-left: auto
   margin-right: auto
+  padding-left: 120px
+  padding-right: 120px
+
   padding-top: 20px
+  background-color: black
   
 .nav-list
   list-style-type: none
   display: block
   float: right
+  color: white
   
 .nav-list-item
+  font-family: 'Lato', Geometria, cursive, Amble, Quicksand, "Sofia Pro", cursive, Texta, "Museo Slab", cursive
   display: inline-block
   margin-left: 30px
-  font-weight: bold
+  color: white
+  font-weight: 300
 
 .brand
-  color: orange
+  color: white
   text-decoration: none
-  font-size: 1.2em
+  font-size: 1.7em
   
 .nav-link
   text-decoration: none
-  font-size: 1.2em
-  
+  font-size: 1.4em
+  color: white
+
+a.nav-link:hover 
+  text-decoration: none
+
+
 .feature
-  
+  text-align: center;
   width: 100%
-  height: 550px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.3)
+
+.feature-logo-img
+  width:400px
+  height: auto
+  margin-top: 100px
+  padding:40px
+  background-color: rgba(255, 255, 255, 0.0)
+  border-style: solid 
+  border-width: 0px
+  border-color: BRAND_GREEN
   
 .hero-img
   margin-left: 0px
@@ -53,6 +80,12 @@ a
   max-height: 600px
   z-index: -5
   overflow: hidden
+
+.logo-img
+  background-color: black
+  height:40px
+  width: auto 
+  padding-bottom: 14px
   
 h1.lead
   width: auto
@@ -63,7 +96,7 @@ h1.lead
   color: white
   font-weight: bold
   font-size: 3.7em
-  background-color: rgba(0, 0, 0, 0.5)
+  background-color: rgba(72, 61, 139, 0.5)
 
 p.subtext  
   width: auto
@@ -105,13 +138,47 @@ p.subtext
   
 #info
 
-p.how-it-works
-  font-size: 1.5 em
+p.info-header
+  font-size: 1.6 em
   margin-top: 20px
   margin-left: auto
   margin-right: auto
   text-align: center
   width: 100%
+
+p.info-detail
+  font-size: 1.0 em
+  margin-top: 35px
+  margin-left: auto
+  margin-right: auto
+  width: 600 px
+
+p.info-step
+  font-size: 0.9 em
+  font-weight: bold
+  margin-left: auto
+  margin-right: auto
+  width: 70%
+  text-align: center
+
+.partners
+  height: 800px
+  margin-top: 30px
+  padding-top: 20px
+  background-color: rgba(240, 240, 240, 1.0)
+
+p.partners-header
+  font-size: 2.8 em
+  margin-top: 0px
+  margin-bottom: 20px
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  width: 100%
+
+.partners-row
+  margin-left: 100px;
+  margin-right: 100px;
 
 .footer
   height: 50px
@@ -126,6 +193,24 @@ p.footer-label
   margin-right: auto
   font-size: 1.3em
   text-align: center
+
+.fixed 
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /*h1.lead Talent & Connections. Together.
+        //p.subtext Because Internships Aren't Just For College Kids
+        div#form-container
+          form.form-inline.join-form(action='/register' method='post')
+            div.form-group
+              label.sr-only(for="email-input") Your Email
+              div.input-group
+                input.form-control.email-input(type="text" id="email-input" placeholder="Your Email" name="email")
+                div.input-group-addon
+                  | @trinityschoolnyc.org
+            button.btn.btn-success.join-submit(type="submit") Join Us!*/
+
   
   
   
